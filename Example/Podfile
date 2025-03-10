@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'jojo-spine-ios_Example' do
+  pod 'jojo-spine-ios', :path => '../'
+
+  target 'jojo-spine-ios_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
