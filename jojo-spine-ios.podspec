@@ -19,7 +19,7 @@ Spine runtimes for iOS.
 
   s.source           = { :git => 'https://github.com/weiched/jojo-spine-ios.git', :tag => s.version.to_s }
   s.source_files     = 'jojo-spine-ios/Sources/Spine/**/*.{swift}'
-#  s.platform         = :ios, '10.0'
+  s.platform         = :ios, '10.0'
   
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp/include" "$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp-lite"'
