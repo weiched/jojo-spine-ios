@@ -1,0 +1,6 @@
+framework module jojo_spine_ios {
+  umbrella header "jojo-spine-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

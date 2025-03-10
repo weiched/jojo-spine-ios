@@ -1,0 +1,16 @@
+PODS:
+  - jojo-spine-ios (4.2.0)
+
+DEPENDENCIES:
+  - jojo-spine-ios (from `../`)
+
+EXTERNAL SOURCES:
+  jojo-spine-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  jojo-spine-ios: 0dcfb553a61706737079236cbbe828bd296780db
+
+PODFILE CHECKSUM: 85bfec7aef2d7e4d75c2366276efaf821f29c725
+
+COCOAPODS: 1.16.2

@@ -8,35 +8,29 @@
 
 Pod::Spec.new do |s|
   s.name             = 'jojo-spine-ios'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of jojo-spine-ios.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '4.2.0'
+  s.summary          = 'Spine runtimes for iOS.'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Spine runtimes for iOS.
                        DESC
+  s.homepage         = 'https://esotericsoftware.com'
+  s.author           = { "Esoteric Software LLC  " => "https://esotericsoftware.com" }
+  s.license          = { :file => 'LICENSE' }
 
-  s.homepage         = 'https://github.com/weichunhao/jojo-spine-ios'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'weichunhao' => 'weichunhao@tinman.cn' }
-  s.source           = { :git => 'https://github.com/weichunhao/jojo-spine-ios.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'jojo-spine-ios/Classes/**/*'
+  s.source           = { :git => 'https://github.com/weiched/jojo-spine-ios.git', :tag => s.version.to_s }
+  s.source_files     = 'jojo-spine-ios/Sources/Spine/**/*.{swift}'
+#  s.platform         = :ios, '10.0'
   
-  # s.resource_bundles = {
-  #   'jojo-spine-ios' => ['jojo-spine-ios/Assets/*.png']
-  # }
+  s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => '"$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp/include" "$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp-lite"'
+  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.resource_bundles = {
+    'SpineBundle' => ['jojo-spine-ios/Sources/Spine/**/*.{metal}']
+  }
+
+  s.swift_version = '5.0'
+#  s.dependency 'SpineCppLite'
+#  s.dependency 'SpineShadersStructs'
+  
 end

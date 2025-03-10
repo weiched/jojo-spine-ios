@@ -1,0 +1,35 @@
+{
+  "name": "jojo-spine-ios",
+  "version": "4.2.0",
+  "summary": "Spine runtimes for iOS.",
+  "description": "Spine runtimes for iOS.",
+  "homepage": "https://esotericsoftware.com",
+  "authors": {
+    "Esoteric Software LLC  ": "https://esotericsoftware.com"
+  },
+  "license": {
+    "file": "LICENSE"
+  },
+  "source": {
+    "git": "https://github.com/weiched/jojo-spine-ios.git",
+    "tag": "4.2.0"
+  },
+  "source_files": "jojo-spine-ios/Sources/Spine/**/*.{swift}",
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "\"$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp/include\" \"$(PODS_ROOT)/SpineCppLite/spine-cpp/spine-cpp-lite\""
+  },
+  "resource_bundles": {
+    "SpineBundle": [
+      "jojo-spine-ios/Sources/Spine/**/*.{metal}"
+    ]
+  },
+  "swift_versions": "5.0",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "visionos": null,
+    "watchos": null
+  },
+  "swift_version": "5.0"
+}

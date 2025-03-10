@@ -28,10 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18482785B8E6180EC31AADD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		18482785B8E6180EC31AADD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1942772DC516BAAC5C7A859E /* Pods-jojo-spine-ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojo-spine-ios_Example.release.xcconfig"; path = "Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2F917446DACFFB687634A4F7 /* Pods_jojo_spine_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jojo_spine_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C2FE81E714D36699195E94B /* jojo-spine-ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "jojo-spine-ios.podspec"; path = "../jojo-spine-ios.podspec"; sourceTree = "<group>"; };
+		4C2FE81E714D36699195E94B /* jojo-spine-ios.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "jojo-spine-ios.podspec"; path = "../jojo-spine-ios.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* jojo-spine-ios_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jojo-spine-ios_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7E4E7C965A8B5800CD72BD84 /* Pods-jojo-spine-ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojo-spine-ios_Example.debug.xcconfig"; path = "Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8FF44BDFE463BD78B8B986 /* Pods-jojo-spine-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojo-spine-ios_Tests.debug.xcconfig"; path = "Target Support Files/Pods-jojo-spine-ios_Tests/Pods-jojo-spine-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C099BAC3C74E519F52DBD5A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C099BAC3C74E519F52DBD5A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E026590D99D7B41F16342979 /* Pods_jojo_spine_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jojo_spine_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E085AEB26CFBE5837F81DDEC /* Pods-jojo-spine-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jojo-spine-ios_Tests.release.xcconfig"; path = "Target Support Files/Pods-jojo-spine-ios_Tests/Pods-jojo-spine-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				BB8FF44BDFE463BD78B8B986 /* Pods-jojo-spine-ios_Tests.debug.xcconfig */,
 				E085AEB26CFBE5837F81DDEC /* Pods-jojo-spine-ios_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +170,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				E9D775C23F60493A954F4731 /* [CP] Embed Pods Frameworks */,
+				5F682817C1B2D3C2126194C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,6 +262,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5F682817C1B2D3C2126194C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/jojo-spine-ios/SpineBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SpineBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		689DB3C7C9B967E43AFB9337 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,24 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E9D775C23F60493A954F4731 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/jojo-spine-ios/jojo_spine_ios.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jojo_spine_ios.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jojo-spine-ios_Example/Pods-jojo-spine-ios_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

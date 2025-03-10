@@ -1,0 +1,6 @@
+framework module Pods_jojo_spine_ios_Example {
+  umbrella header "Pods-jojo-spine-ios_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
